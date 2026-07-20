@@ -1,0 +1,8 @@
+AGENTS.md export-ignore
+AGENT_START.md export-ignore
+SELF.md export-ignore
+repo.manifest.json export-ignore
+san/** export-ignore
+docs/history/** export-ignore
+docs/decisions/** export-ignore
+docs/architecture/** export-ignore

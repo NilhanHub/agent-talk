@@ -1,0 +1,18 @@
+{
+  "name": "agent-talk",
+  "version": "1.0.0",
+  "description": "Local mic-to-Edge-TTS voice chat demo using the laptop microphone and Edge TTS.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "benchmark:round": "node scripts/benchmark/round.mjs",
+    "benchmark:analyze": "node scripts/benchmark/analyze.mjs",
+    "benchmark:campaign": "node scripts/benchmark/campaign.mjs",
+    "verify": "npm test"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}

@@ -1,0 +1,9 @@
+artifacts/
+audio-cache/
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+coverage/
+scripts/san/

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent Talk</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell" data-app="agent-talk">
+      <section class="panel">
+        <p class="eyebrow">Local Voice Loop</p>
+        <h1>Speak into your laptop mic and hear Andrew answer back.</h1>
+        <p class="lede">
+          This page listens through your browser, sends the transcript to the local
+          server, and plays the reply with Edge TTS.
+        </p>
+
+        <div class="controls">
+          <label class="field">
+            <span>Voice</span>
+            <select id="voiceSelect"></select>
+          </label>
+
+          <label class="toggleRow">
+            <input id="duplexToggle" type="checkbox" checked />
+            <span>Full-duplex</span>
+          </label>
+
+          <div class="buttonRow">
+            <button id="listenButton" type="button">Start Listening</button>
+            <button id="stopButton" type="button" disabled>Stop</button>
+          </div>
+        </div>
+
+        <div class="statusCard">
+          <p class="label">Status</p>
+          <p id="statusText">Loading voices...</p>
+          <p class="modeText" id="modeText">Local stand-in brain</p>
+        </div>
+
+        <div class="conversation">
+          <article class="bubble userBubble">
+            <p class="label">You</p>
+            <p id="heardText">Say something to begin.</p>
+          </article>
+
+          <article class="bubble botBubble">
+            <p class="label">Agent Talk</p>
+            <p id="replyText">Your spoken reply will show up here.</p>
+          </article>
+        </div>
+
+        <audio id="player" controls preload="none"></audio>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
