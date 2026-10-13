@@ -13,6 +13,6 @@
     "verify": "npm test"
   },
   "devDependencies": {
-    "playwright-core": "^1.55.0"
+    "playwright-core": "^1.64.0"
   }
 }
